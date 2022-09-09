@@ -45,7 +45,7 @@ header {
 }
 .navbar .box-navbar .menu {
 	display: flex;
-	column-gap: 30px;
+	column-gap: 20px;
 }
 .navbar .box-navbar .menu li {
 	list-style-type: none;
@@ -53,8 +53,8 @@ header {
 .navbar .box-navbar .menu li a {
 	text-decoration: none;
 	color: #ffffff;
-	padding: 10px 15px;
-	border-radius: 5px;
+	padding: 5px 15px;
+	border-radius: 3px;
 }
 .navbar .box-navbar .menu li a:hover {
 	background-color: #ffd700;
@@ -65,7 +65,7 @@ header {
 	-o-transition: all 0.3s ease;
 }
 .navbar .box-navbar .menu .active a {
-	background-color: #0050b3;
+	background-color: #ff9292;
 }
 .menu-bar {
 	color: #ffffff;
@@ -84,7 +84,6 @@ header {
 	align-items: center;
 	padding-top: 50px;
 }
-
 .hero .box-hero {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -116,12 +115,12 @@ header {
 .hero .box-hero .box:nth-child(1) button {
 	width: 180px;
 	height: 50px;
-	background-color: #0050b3;
+	background-color: #ff7171;
 	font-weight: bold;
 	color: #ffffff;
 	border: none;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .hero .box-hero .box:nth-child(1) button:hover {
 	background-color: #ffd700;
@@ -129,7 +128,7 @@ header {
 }
 .hero .box-hero .box:nth-child(2) img {
 	width: 25%;
-	border-radius: 5px;
+	border-radius: 3px;
 	flex-direction: column;	
 	object-fit: cover;
 	width: 100px;
@@ -138,7 +137,7 @@ header {
 /****************************/
 
 /*********************************************************************/
-/* LAYOUT PAGE 2 */ /* SERVICES */
+/* LAYOUT PAGE 2 */ /* PAGE-DATA */
 /*******************************************************************/
 .container h2 {
 	color: #ffffff;
@@ -147,92 +146,97 @@ header {
 	font-weight: 700;
 	text-align: center;
 }
-.services {
+.page-data {
 	width: 100%;
 	min-height: 40vh;
 	display: flex;
 	align-items: center;
 	padding: 0;
+	background-color: #ff9292;
+	/* background-image: url("images/kopi.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; */
 }
-.services .box-services {
+.page-data .box-page-data {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	row-gap: 50px;
 }
-.services .box-services .box {
+.page-data .box-page-data .box {
 	width: 300px;
 	text-align: center;
 	color: #ffffff;
 }
-.services .box-services .box i {
+.page-data .box-page-data .box i {
 	font-size: 40px;
 	margin-bottom: 10px;
 	color: #ffffff;
 }
-.services .box-services .box p {
-	font-weight: 100;
+.page-data .box-page-data .box p {
+	font-weight: 200;
 }
 /************************************/
 
 /*************************************************************************/
-/* LAYOUT PAGE 3 */ /* PANTAI */
+/* LAYOUT PAGE 3 */ /* PROFIL */
 /***********************************************************************/
-.pantai {
+.profil {
 	padding: 50px 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bgpadi.jpeg");
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bgpadi.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed; */
 }
-.pantai img {
+.profil img {
 	width: 50%;
 }
-.pantai .box-pantai {
+.profil .box-profil {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 	gap :10px;
-	row-gap: 30px;
+	row-gap: 60px;
 }
-.pantai .box-pantai .box {
+.profil .box-profil .box {
 	text-align: center;
 	color: #ffffff;
 	transition: all 0.3s ease;
 }
-.pantai .box-pantai .box:hover {
+.profil .box-profil .box:hover {
 	transform: translateY(-20px);
 }
-.pantai .container h2 {
+.profil .container h2 {
 	font-size: 40px;
 	font-weight: 700;
 	text-align: center;
 }
-.pantai .box-pantai .box h3 {
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: 0.5px;
+.profil .box-profil .box h3 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
-.pantai .box-pantai .box img {
+.profil .box-profil .box img {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	margin-bottom: 10px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
-.pantai .box-pantai .box p {
+.profil .box-profil .box p {
 	font-weight: 100;
 	margin-bottom: 10px;
 }
-.pantai .box-pantai .box button {
+.profil .box-profil .box button {
 	width: 160px;
-	height: 40px;
+	height: 30px;
 	background-color: #0050b3;
 	color: #ffffff;
 	font-weight: bold;
-	border-radius: 5px;
+	border-radius: 3px;
 	cursor: pointer;
 	border: none;
 }
-.pantai .box-pantai .box button:hover {
+.profil .box-profil .box button:hover {
 	background-color: #ffd700;
 	transition: all 0.3s ease;
 }
@@ -242,14 +246,18 @@ header {
 /* LAYOUT PAGE 4 */ /* DAFTAR */
 /***********************************************************************/
 .daftar {
-	padding: 50px 0 10px 0;
+	padding: 50px 0 15px 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bgpadi.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 .daftar .box-daftar {
 	color: #ffffff;
 	text-align: center;
 }
 .daftar .box-daftar h1 {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .daftar .box-daftar h3 {
 	font-weight: 400;
@@ -271,11 +279,12 @@ header {
 	background-color: #0050b3;
 	border: none;
 	min-width: 100px;
-	min-height: 40px;
-	border-radius: 5px;
+	min-height: 35px;
+	border-radius: 3px;
 	cursor: pointer;
 	color: #ffffff;
 	padding-inline: 10px;
+	margin: 0 4px;
 }
 .daftar .box-daftar button:hover {
 	background-color: #ffd700;
@@ -308,13 +317,6 @@ header {
 	flex-direction: row;
 	row-gap: 10px;
 }
-/*.iconsosial {
-	display: flex;
-	flex-direction: row;
-}*/
-/*.footer .box-footer .box:nth-child(2) h3 {
-	text-align: center;
-}*/
 .footer .box-footer .box:nth-child(2) a {
 	text-decoration: none;
 	color: #ffffff;
@@ -324,14 +326,12 @@ header {
 }
 .footer .box-footer .box:nth-child(2) a:hover {
 	background-color: #ffd700;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .footer .box-footer .box:nth-child(1) p {
 	font-size: 12px;
 	line-height: 2;
 	margin-top: 10px;
-}
-.footer .box-footer .box p {
 	font-weight: 200;
 }
 .footer .box-footer .box:nth-child(3) {
@@ -420,7 +420,7 @@ header {
 		align-self: flex-end;
 		justify-self: center;
 	}
-	.pantai .box-pantai {
+	.profil .box-profil {
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	}
 }

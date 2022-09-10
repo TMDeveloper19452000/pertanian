@@ -31,8 +31,9 @@ header {
 	z-index: 1;
 }
 .navbar.scrolling-active {
-	background-color: #0050b3;
+	background-color: #ff7171;
 	padding: 10px 0;
+	border-bottom: 2px solid #181818;
 }
 .navbar .box-navbar {
 	display: flex;
@@ -57,7 +58,7 @@ header {
 	border-radius: 3px;
 }
 .navbar .box-navbar .menu li a:hover {
-	background-color: #ffd700;
+	background-color: #99f0ca;
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -65,7 +66,7 @@ header {
 	-o-transition: all 0.3s ease;
 }
 .navbar .box-navbar .menu .active a {
-	background-color: #ff9292;
+	background-color: #ff7171;
 }
 .menu-bar {
 	color: #ffffff;
@@ -123,7 +124,7 @@ header {
 	border-radius: 3px;
 }
 .hero .box-hero .box:nth-child(1) button:hover {
-	background-color: #ffd700;
+	background-color: #99f0ca;
 	transition: all 0.3s ease;
 }
 .hero .box-hero .box:nth-child(2) img {
@@ -152,7 +153,7 @@ header {
 	display: flex;
 	align-items: center;
 	padding: 0;
-	background-color: #ff9292;
+	background-color: #ff7171;
 	/* background-image: url("images/kopi.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -175,7 +176,10 @@ header {
 	color: #ffffff;
 }
 .page-data .box-page-data .box p {
-	font-weight: 200;
+	font-weight: 400;
+}
+.page-data .box-page-data .box h4 {
+	margin-bottom: 10px;
 }
 /************************************/
 
@@ -184,10 +188,10 @@ header {
 /***********************************************************************/
 .profil {
 	padding: 50px 0;
-	/* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bgpadi.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/bgpadi.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed; */
+	background-attachment: fixed; 
 }
 .profil img {
 	width: 50%;
@@ -214,7 +218,7 @@ header {
 .profil .box-profil .box h3 {
 	font-size: 30px;
 	font-weight: 700;
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 }
 .profil .box-profil .box img {
 	width: 100%;
@@ -229,7 +233,7 @@ header {
 .profil .box-profil .box button {
 	width: 160px;
 	height: 30px;
-	background-color: #0050b3;
+	background-color: #ff7171;
 	color: #ffffff;
 	font-weight: bold;
 	border-radius: 3px;
@@ -237,7 +241,7 @@ header {
 	border: none;
 }
 .profil .box-profil .box button:hover {
-	background-color: #ffd700;
+	background-color: #99f0ca;
 	transition: all 0.3s ease;
 }
 /********************************/
@@ -276,7 +280,7 @@ header {
 	}
 }
 .daftar .box-daftar button {
-	background-color: #0050b3;
+	background-color: #ff7171;
 	border: none;
 	min-width: 100px;
 	min-height: 35px;
@@ -287,7 +291,7 @@ header {
 	margin: 0 4px;
 }
 .daftar .box-daftar button:hover {
-	background-color: #ffd700;
+	background-color: #99f0ca;
 }
 .daftar .box-daftar button i {
 	font-size: 16px;
@@ -296,12 +300,51 @@ header {
 }
 /*******************************/
 
+/**************************************************************************/
+/* LAYOUT TENTANG */ /* TENTANG */
+/**************************************************************************/
+.tentang {
+	width: 100%;
+	min-height: 50vh;
+	background-color: #ff7171;
+	padding: 20px 0;
+	
+}
+.tentang .box-tentang {
+		width: 100%;
+		color: #ffffff;
+		
+}
+.tentang .box-tentang h1 {
+	font-size: 35px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.tentang .box-tentang p {
+	font-size: 15px;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: justify;
+	margin: 0 200px;
+}
+.tentang .box-tentang span {
+	font-size: 17px;
+	font-weight: bold;
+
+}
+
+
+/***********************************/
+
 /*************************************************************************/
 /* LAYOUT FOOTER */ /* FOOTER */
 /***********************************************************************/
 .footer {
-	padding: 50px 0;
-	background-color: #0050b3;
+	padding: 20px 0 30px 0;
+	background-color: #ff7171;
+	text-align: center;
 }
 .footer .box-footer {
 	display: grid;
@@ -311,6 +354,9 @@ header {
 }
 .footer .box-footer .box {
 	color: #ffffff;
+}
+.footer .box-footer .box h2 {
+	margin-bottom: 10px;
 }
 .footer .box-footer .box:nth-child(2) {
 	display: flex;
@@ -325,13 +371,12 @@ header {
 	padding: 5px 15px;
 }
 .footer .box-footer .box:nth-child(2) a:hover {
-	background-color: #ffd700;
+	background-color: #99f0ca;
 	border-radius: 3px;
 }
 .footer .box-footer .box:nth-child(1) p {
-	font-size: 12px;
-	line-height: 2;
-	margin-top: 10px;
+	font-size: 15px;
+	line-height: 1;
 	font-weight: 200;
 }
 .footer .box-footer .box:nth-child(3) {
@@ -367,7 +412,7 @@ header {
 		transform: translateX(50%);
 		opacity: 0;
 		transition: all 0.3s ease;
-		background-color: #0050b3;
+		background-color: #ff7171;
 	}
 	.navbar .box-navbar .menu.menu-active {
 		top: 80px;
